@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Animation1 : MonoBehaviour
 {
@@ -56,6 +57,11 @@ public class Animation1 : MonoBehaviour
         {
             Respauwn();
             intentos--;
+            if(intentos >= 0)
+            {
+                //Application.LoadLevel(2);
+                SceneManager.LoadScene("Gameover");
+            }
             vidas = 3;
         }
     }
