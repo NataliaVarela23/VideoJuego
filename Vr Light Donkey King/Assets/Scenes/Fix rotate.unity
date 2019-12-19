@@ -41149,8 +41149,7 @@ MonoBehaviour:
   Nombre: {fileID: 724090779}
   cuerpo: {fileID: 189027781}
   cuadro: {fileID: 953863236}
-  squad: 0
-  wise: 0
+  square: {fileID: 0}
 --- !u!1 &1090352767
 GameObject:
   m_ObjectHideFlags: 0

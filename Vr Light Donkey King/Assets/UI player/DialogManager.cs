@@ -10,6 +10,7 @@ public class DialogManager : MonoBehaviour
     public Text Nombre;
     public Text cuerpo;
     public Animator cuadro;
+    public GameObject square;
 
 
 
@@ -62,8 +63,10 @@ public class DialogManager : MonoBehaviour
     }
     public void EndDialogue()
     {
-        cuadro.SetBool("IsOpen", false);
+        if (cuadro.GetBool("IsOpen") == true)
         FindObjectOfType<endGame>().EndGame();
+        cuadro.SetBool("IsOpen", false);
+
     }
 
     private void Update()
