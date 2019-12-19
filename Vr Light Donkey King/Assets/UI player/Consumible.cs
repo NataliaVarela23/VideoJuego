@@ -30,10 +30,12 @@ public class Consumible : MonoBehaviour
                 if (tipo == 1 & Animation1.vidas < 5)
                 {
                     Destroy(this.gameObject);
+                    PlayerPrefs.SetInt("arrzoi", PlayerPrefs.GetInt("arrzoi") + 1);
                     Animation1.vidas += 1;
                 }
                 if (tipo == 2)
                 {
+                    PlayerPrefs.SetInt("intent", PlayerPrefs.GetInt("intent") + 1);
                     Destroy(this.gameObject);
                     Animation1.intentos += 1;
                 }

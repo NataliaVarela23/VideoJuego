@@ -44,6 +44,11 @@ public class Clock : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //PlayerPref
+        PlayerPrefs.SetInt("hr", horas);
+        PlayerPrefs.SetInt("min", minutos);
+        PlayerPrefs.SetInt("seg", segundos);
+
         texthora.text = horas.ToString();
         textmin.text = minutos.ToString();
         textseg.text = segundos.ToString();

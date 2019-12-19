@@ -21,6 +21,7 @@ public class key : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            PlayerPrefs.SetInt("cn", PlayerPrefs.GetInt("cn") + 1);
             Destroy(gameObject);
             Animation1.key += 1;
         }

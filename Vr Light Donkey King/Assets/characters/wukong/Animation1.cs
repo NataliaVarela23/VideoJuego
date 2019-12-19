@@ -39,6 +39,8 @@ public class Animation1 : MonoBehaviour
     public void Start()
     {
         StartCoroutine(Light());
+
+
     }
     IEnumerator Light()
     {
@@ -73,6 +75,9 @@ public class Animation1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //PlayerPref 
+        PlayerPrefs.SetInt("gb", Goblins);
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             vidas -= 1;

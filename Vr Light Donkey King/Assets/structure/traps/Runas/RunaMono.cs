@@ -17,6 +17,7 @@ public class RunaMono : MonoBehaviour
     {
         if (interactable)
         {
+            PlayerPrefs.SetInt("jpo", PlayerPrefs.GetInt("jpo") + 1);
             UnActivate();
             boss.GetComponent<MonkeyBoss>().Dice();
             boss.GetComponent<MonkeyBoss>().Ky();
