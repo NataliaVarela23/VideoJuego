@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 898954038}
   - component: {fileID: 898954037}
   - component: {fileID: 3089656608260313748}
+  - component: {fileID: 3961542726942262733}
   m_Layer: 5
   m_Name: halo
-  m_TagString: Untagged
+  m_TagString: ExcludeTeleport
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88,6 +89,85 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 50.02
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3961542726942262733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898954035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a35af46e2913f2847853a7485aa978f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogo:
+    Name: Buda
+    oracion:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+  hijo:
+  - Name: Buda
+    oracion:
+    - "Saludos viajero, felicidades por haber llegado hasta aqu\xED. Pulsa F para
+      continuar."
+    - "Mi consejo de sabidur\xEDa m\xEDstica es..."
+    - "cepillate los dientes todos los d\xEDas."
+    - "Hasta la pr\xF3xima."
+  - Name: Buda
+    oracion:
+    - "Saludos viajero, felicidades por haber llegado hasta aqu\xED. Pulsa F para
+      continuar."
+    - "Mi consejo de sabidur\xEDa m\xEDstica es..."
+    - No dibujes cosas raras en los cuadernos de tus amigos.
+    - "Hasta la pr\xF3xima."
+  - Name: Buda
+    oracion:
+    - "Saludos viajero, felicidades por haber llegado hasta aqu\xED. Pulsa F para
+      continuar."
+    - "Mi consejo de sabidur\xEDa m\xEDstica es..."
+    - Ande con cuidado, respete para que lo respeten.
+    - "Hasta la pr\xF3xima."
+  - Name: Buda
+    oracion:
+    - "Saludos viajero, felicidades por haber llegado hasta aqu\xED. Pulsa F para
+      continuar."
+    - "Mi consejo de sabidur\xEDa m\xEDstica es..."
+    - 'Eso dijo mi primo y se murio.
+
+'
+    - "Hasta la pr\xF3xima."
+  - Name: Buda
+    oracion:
+    - "Saludos viajero, felicidades por haber llegado hasta aqu\xED. Pulsa F para
+      continuar."
+    - "Mi consejo de sabidur\xEDa m\xEDstica es..."
+    - Nunca te metas con una mahindra.
+    - "Hasta la pr\xF3xima."
+  - Name: Buda
+    oracion:
+    - "Saludos viajero, felicidades por haber llegado hasta aqu\xED. Pulsa F para
+      continuar."
+    - "Mi consejo de sabidur\xEDa m\xEDstica es..."
+    - Griffith no hizo nada malo.
+    - "Hasta la pr\xF3xima."
+  - Name: Buda
+    oracion:
+    - "Saludos viajero, felicidades por haber llegado hasta aqu\xED. Pulsa F para
+      continuar."
+    - "Mi consejo de sabidur\xEDa m\xEDstica es..."
+    - Si te dice "te quiero", llevale un tecito al maestro Yoda
+    - "Hasta la pr\xF3xima."
+  wisem: 0
 --- !u!1 &1700022129
 GameObject:
   m_ObjectHideFlags: 0
@@ -100,6 +180,7 @@ GameObject:
   - component: {fileID: 1700022133}
   - component: {fileID: 1700022132}
   - component: {fileID: 1700022131}
+  - component: {fileID: 855607922}
   m_Layer: 5
   m_Name: GoldenHaloCanvas (3)
   m_TagString: Untagged
@@ -187,6 +268,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!65 &855607922
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700022129}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 209.7, y: 156.48, z: 78.12}
+  m_Center: {x: 0, y: 69, z: -143.14}
 --- !u!1 &5224153062821674461
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,7 +338,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b9fc2e74ff095aa48bd7c424b16be271, type: 3}
+  - {fileID: 2100000, guid: 43d493b9a82ccfb408fbd9bd047aa182, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
