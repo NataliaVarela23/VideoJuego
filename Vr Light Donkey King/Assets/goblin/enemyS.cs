@@ -35,7 +35,7 @@ public class enemyS : MonoBehaviour
 
     public void RecTarget(Vector3 posi)
     {
-        print("recibir");
+
         Target = posi;
 
         timer = Random.Range(timerMin, timerMax);

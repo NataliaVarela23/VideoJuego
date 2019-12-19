@@ -50,7 +50,7 @@ public class npChild : MonoBehaviour
     {
         if (coles == false && proc == 1)
         {
-            print("funcion");
+
             proc = 2;
             poser = transform.position;
             enemyS enemy = GetComponentInParent<enemyS>();

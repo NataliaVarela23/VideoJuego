@@ -34,6 +34,7 @@ public class Animation1 : MonoBehaviour
     public void Tp(Vector3 land)
     {
         pj.transform.localPosition = land;
+        print("olas");
     }
     public void Start()
     {
@@ -57,7 +58,7 @@ public class Animation1 : MonoBehaviour
         {
             Respauwn();
             intentos--;
-            if(intentos >= 0)
+            if(intentos <= 0)
             {
                 //Application.LoadLevel(2);
                 SceneManager.LoadScene("Gameover");

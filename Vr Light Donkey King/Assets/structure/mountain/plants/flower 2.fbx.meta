@@ -1,9 +1,17 @@
 fileFormatVersion: 2
-guid: 1b66b05f44c2ca647b68bd698104c9e9
+guid: c02f9567a85d25740b8d5e177489c654
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    2186277476908879412: ImportLogs
+    100000: //RootNode
+    400000: //RootNode
+    2100000: Material
+    2100002: Material.004
+    2100004: Material.001
+    2100006: Material.005
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Plane.000
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -84,7 +92,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

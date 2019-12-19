@@ -7,7 +7,7 @@ public class key : MonoBehaviour
     public float rotTas;
     Collider m_Collider;
     public Vector3 dits;
-    public Transform Player;
+    public GameObject Player;
     public float tolerancia;
     public float tol;
     // Start is called before the first frame update
@@ -29,8 +29,10 @@ public class key : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Player = GameObject.FindGameObjectWithTag("Wukong");
         transform.Rotate(new Vector3(0f, 0f, rotTas));
-        dits = transform.position - Player.position;
+        if(Player != null)
+        dits = transform.position - Player.transform.position;
 
         tol = dits.magnitude;
 
