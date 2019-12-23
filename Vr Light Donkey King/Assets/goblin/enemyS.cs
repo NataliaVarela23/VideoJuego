@@ -70,12 +70,19 @@ public class enemyS : MonoBehaviour
 
     }
 
+    public AudioSource reproductor;
+    public AudioClip audioclip;
+
+
     public void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
             Animation1.Goblins++;
             Destroy(gameObject);
+            reproductor.clip = audioclip;
+            reproductor.Play();
+            
         }
     }
 
